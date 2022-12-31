@@ -144,6 +144,16 @@ body {
   margin-bottom: 3rem;
 }
 
+p::-moz-selection {
+  background-color: #7ed56f;
+  color: white;
+}
+
+p::selection {
+  background-color: #7ed56f;
+  color: white;
+}
+
 .u-center-text {
   text-align: center;
 }

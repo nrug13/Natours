@@ -51,3 +51,7 @@
     margin-bottom: 3rem;
    }
 }
+p::selection{
+    background-color: $color-primary;
+    color: white;
+}
