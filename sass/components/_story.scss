@@ -12,6 +12,11 @@
     @include respond(tab-p) {
         width: 100%;
         padding: 3rem;
+        transform: skewX(0deg);
+        &>* {
+            transform: skewX(0deg) !important;
+        }
+        
 
     }
 
@@ -30,6 +35,11 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-2rem) skewX(12deg);
         ;
+        @include respond(tab-p) {
+            
+            transform: skewX(0deg);
+    
+        }
 
     }
 
@@ -54,6 +64,8 @@
         color: white;
         opacity: 0;
         backface-visibility: hidden;
+        
+
     }
 
     &:hover &_caption {

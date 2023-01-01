@@ -1,4 +1,8 @@
 .form{
+    @include respond(tab-p){
+        
+    
+    }
     &_group{
         margin-bottom: 2rem !important;
     }
@@ -35,6 +39,7 @@
     &_radio-input{
         
         display: none;
+        
     }
     &_label{
         font-size: 1.2rem;
@@ -47,7 +52,12 @@
     &_radio-group{
         width: 49%;
         display: inline-block;
-        
+        @include respond(tab-p) {
+            width: 100%;
+            margin-bottom: 2rem;
+            
+    
+        }
 
     }
     &_radio-label{

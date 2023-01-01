@@ -342,12 +342,26 @@ p::selection {
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/nat-10.jpg);
   background-size: 100%;
-  height: 50rem;
+  background-repeat: no-repeat;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(/img/nat-10.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+      background-size: cover; } }
   .book_form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book_form {
+        width: 70%; } }
+    @media (max-width: 75em) {
+      .book_form {
+        width: 100%; } }
 
 .header {
   height: 95vh;
@@ -384,7 +398,10 @@ p::selection {
   @media (max-width: 56.25em) {
     .story {
       width: 100%;
-      padding: 3rem; } }
+      padding: 3rem;
+      transform: skewX(0deg); }
+      .story > * {
+        transform: skewX(0deg) !important; } }
   .story > * {
     transform: skewX(12deg); }
   .story_shape {
@@ -395,6 +412,9 @@ p::selection {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(12deg); }
+    @media (max-width: 56.25em) {
+      .story_shape {
+        transform: skewX(0deg); } }
   .story_image {
     width: 100%;
     height: 100%;
@@ -583,6 +603,10 @@ p::selection {
 .form_radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form_radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form_radio-label {
   font-size: 1.6rem;
