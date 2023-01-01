@@ -1,7 +1,8 @@
 .navigation {
-    // @include respond(tab-p){
-    //     margin-bottom: $gutter-vertical-small;
-    // }
+    @include respond(tab-p){
+        top: 4rem;
+        right: 1rem;
+    }
 
     &_checkbox {
         display: none;
