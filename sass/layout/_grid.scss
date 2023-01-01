@@ -3,14 +3,26 @@
     margin: 0 auto;
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        @include respond(tab-p){
+            margin-bottom: $gutter-vertical-small;
+        }
     }
-    
+    @include respond(tab-p){
+        max-width: 50rem
+    }
     @include clearfix;
     [class^="col-"] {
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-p){
+                margin-right: 0;
+            }
+        }
+        @include respond(tab-p){
+            width: 100% !important;
         }
     }
 

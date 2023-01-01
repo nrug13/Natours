@@ -45,11 +45,11 @@
     transition: all .2s;
     @include respond(tab-p){
         
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     @include respond(phone){
         
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     &:hover{
         transform: skewY(5deg)  skewX(15deg);
