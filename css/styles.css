@@ -381,6 +381,10 @@ p::selection {
   font-size: 1.6rem;
   transform: skewX(-12deg);
   position: relative; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 3rem; } }
   .story > * {
     transform: skewX(12deg); }
   .story_shape {
@@ -396,6 +400,10 @@ p::selection {
     height: 100%;
     border-radius: 50%;
     transition: all .5s; }
+    @media (max-width: 37.5em) {
+      .story_image {
+        width: 80%;
+        height: 80%; } }
   .story_caption {
     position: absolute;
     top: 50%;

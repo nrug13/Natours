@@ -1,4 +1,4 @@
-.story{
+.story {
     width: 75%;
     margin: 0 auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -9,10 +9,18 @@
     transform: skewX(-12deg);
     position: relative;
 
-    &>*{
+    @include respond(tab-p) {
+        width: 100%;
+        padding: 3rem;
+
+    }
+
+
+    &>* {
         transform: skewX(12deg);
     }
-    &_shape{
+
+    &_shape {
         width: 15rem;
         height: 15rem;
         float: left;
@@ -20,33 +28,43 @@
         border-radius: 50%;
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-2rem)  skewX(12deg);;
-        
+        transform: translateX(-2rem) skewX(12deg);
+        ;
+
     }
-    &_image{
-       width: 100%;
-       height: 100%;
-       border-radius: 50%;
-       transition: all .5s;
-        
+
+    &_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: all .5s;
+
+        @include respond(phone) {
+            width: 80%;
+            height: 80%;
+        }
+
     }
-    &_caption{
+
+    &_caption {
         position: absolute;
         top: 50%;
         left: 55%;
-        transform: translate(-50%,50%);
+        transform: translate(-50%, 50%);
         color: white;
         opacity: 0;
         backface-visibility: hidden;
     }
-    &:hover &_caption{
+
+    &:hover &_caption {
         transition: all .5s;
         opacity: 1;
-        transform: translate(-50%,-30%);
+        transform: translate(-50%, -30%);
     }
-    &:hover &_image{
+
+    &:hover &_image {
         filter: blur(1px) brightness(80%);
-        transform:scale(1.5);
-       
+        transform: scale(1.5);
+
     }
 }
