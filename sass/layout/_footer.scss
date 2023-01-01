@@ -1,41 +1,67 @@
-.footer{
+.footer {
     background-color: $color-gray-dark-dark;
-    
+
     padding: 10rem 0;
-    font-size: 1.4rem;
-    &_copyright{
-        border-top: 1px solid $color-gray-dark-2;
-       padding-top: 2rem;
-       width: 70%;
-       float: right;
+
+    @include respond(tab-p) {
+        padding: 8rem 0;
     }
-    &_logo-box{
+
+    font-size: 1.4rem;
+
+    &_copyright {
+        border-top: 1px solid $color-gray-dark-2;
+        padding-top: 2rem;
+        width: 70%;
+        float: right;
+        @include respond(tab-p){
+            width: 100%;
+            float: none ;
+        }
+
+    }
+
+    &_logo-box {
         text-align: center;
         margin-bottom: 8rem;
+        @include respond(tab-p){
+            margin-bottom: 6rem;
+        }
     }
-    &_logo{
+
+    &_logo {
         width: 15rem;
         height: auto;
     }
-    &_navigation{
-       border-top: 1px solid $color-gray-dark-2;
-       padding-top: 2rem;
-    //    opacity: 0.5;
-       display: inline-block;
 
+    &_navigation {
+        border-top: 1px solid $color-gray-dark-2;
+        padding-top: 2rem;
+        //    opacity: 0.5;
+        display: inline-block;
+
+        @include respond(tab-p) {
+            width: 100%;
+            text-align: center;
+        }
     }
-    &_list{
+
+    &_list {
         list-style: none;
     }
-    &_item{
+
+    &_item {
         display: inline-block;
-        &:not(:last-child){
+
+        &:not(:last-child) {
             margin-right: 1.5rem;
         }
     }
-    &_link{
+
+    &_link {
+
         &:visited,
-        &:link{
+        &:link {
             color: $color-gray-one;
             text-decoration: none;
             text-transform: uppercase;
@@ -43,9 +69,11 @@
             transition: all .2s;
             background-color: $color-gray-dark-dark;
         }
-        &:hover,&:active{
+
+        &:hover,
+        &:active {
             color: $color-primary;
-            box-shadow: 0 1rem 2 rem rgba($color-black,.4);
+            box-shadow: 0 1rem 2 rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.3);
         }
     }

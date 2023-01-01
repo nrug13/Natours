@@ -119,12 +119,18 @@ p::selection {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem; } }
 
 .u-margin-top-big {
   margin-top: 4rem; }
@@ -214,6 +220,9 @@ p::selection {
     border-radius: 1px;
     position: absolute;
     outline-offset: 1.2rem; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        display: none; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -240,7 +249,8 @@ p::selection {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -276,6 +286,9 @@ p::selection {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem black;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      margin-bottom: 5rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -290,6 +303,9 @@ p::selection {
   background-color: #f7f7f7;
   padding: 25rem;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -300,15 +316,24 @@ p::selection {
   margin-top: -20vh; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 15rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0rem 15rem 0;
   margin-top: -10vh; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
@@ -392,6 +417,10 @@ p::selection {
   -moz-perspective: 150rem;
   height: 52rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .card {
+      padding: 5rem;
+      margin-bottom: 5rem; } }
   .card_side {
     height: 52rem;
     transition: all .5s ease;
@@ -582,14 +611,24 @@ p::selection {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer_copyright {
     border-top: 1px solid #999;
     padding-top: 2rem;
     width: 70%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer_copyright {
+        width: 100%;
+        float: none; } }
   .footer_logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer_logo-box {
+        margin-bottom: 6rem; } }
   .footer_logo {
     width: 15rem;
     height: auto; }
@@ -597,6 +636,10 @@ p::selection {
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer_navigation {
+        width: 100%;
+        text-align: center; } }
   .footer_list {
     list-style: none; }
   .footer_item {
@@ -630,6 +673,14 @@ p::selection {
   text-align: center;
   cursor: pointer;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
+  @media (max-width: 56.25em) {
+    .navigation_button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation_button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation_background {
   width: 6rem;
@@ -641,6 +692,14 @@ p::selection {
   right: 7rem;
   transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
   background-image: radial-gradient(#7ed56f, #ff7730); }
+  @media (max-width: 56.25em) {
+    .navigation_background {
+      top: 4.5rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation_background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation_nav {
   height: 100vh;

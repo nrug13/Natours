@@ -1,8 +1,5 @@
 .navigation {
-    @include respond(tab-p){
-        top: 4rem;
-        right: 1rem;
-    }
+   
 
     &_checkbox {
         display: none;
@@ -21,6 +18,15 @@
         text-align: center;
         cursor: pointer;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+        @include respond(tab-p){
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+        }
     }
     &_background {
         // transform: scale(150);
@@ -35,6 +41,15 @@
         transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 
         background-image: radial-gradient($color-primary, $color-orange-second);
+
+        @include respond(tab-p){
+            top: 4.5rem;
+            right: 4rem;
+        }
+        @include respond(phone){
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &_nav {

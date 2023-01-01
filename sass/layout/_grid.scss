@@ -1,34 +1,41 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
-        @include respond(tab-p){
+
+        @include respond(tab-p) {
             margin-bottom: $gutter-vertical-small;
         }
     }
-    @include respond(tab-p){
-        max-width: 50rem
+
+    @include respond(tab-p) {
+        max-width: 50rem;
+        padding: 0 3rem; 
     }
+
     @include clearfix;
+
     [class^="col-"] {
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-p){
+            @include respond(tab-p) {
                 margin-right: 0;
             }
         }
-        @include respond(tab-p){
+
+        @include respond(tab-p) {
             width: 100% !important;
         }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
-        
+
     }
 
     .col-1-of-3 {

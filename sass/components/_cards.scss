@@ -5,6 +5,11 @@
     
     height: 52rem;
     position: relative;
+    
+    @include respond(tab-p){
+        padding: 5rem;
+        margin-bottom: 5rem;
+    }
 
     &_side{
         height: 52rem;

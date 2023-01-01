@@ -2,6 +2,13 @@
     background-color: $color-gray-one;
     padding: 25rem;
     margin-top: -20vh;
+    @include respond(tab-p){
+        padding: 20rem 0;
+    }
+    // @include respond(phone){
+    //     padding: 23rem 0;
+    // }
+
 }
 
 .section-features {
@@ -20,6 +27,9 @@
         transform: skewY(7deg);
 
     }
+    @include respond(tab-p){
+        padding: 15rem 0;
+    }
 
 
 }
@@ -28,18 +38,25 @@
     background-color: $color-gray-one;
     padding: 25rem 0rem 15rem 0;
     margin-top: -10vh;
+    @include respond(tab-p){
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section-stories {
     padding: 15rem 0;
     // background-color: $color-gray-one;
     position: relative;
+    @include respond(tab-p){
+        padding: 10rem 0;
+    }
 
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+
 }
 
 .book {
