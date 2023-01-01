@@ -419,8 +419,8 @@ p::selection {
   position: relative; }
   @media (max-width: 56.25em) {
     .card {
-      margin-bottom: 5rem;
-      padding-left: 6rem; } }
+      padding: 5rem;
+      margin-bottom: 5rem; } }
   .card_side {
     height: 52rem;
     transition: all .5s ease;
