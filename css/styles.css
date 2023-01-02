@@ -846,6 +846,9 @@ p::selection {
     overflow: hidden; }
   .popup_left {
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup_left {
+        display: none; } }
   .popup_right {
     width: 66%;
     display: table-cell;
@@ -860,3 +863,6 @@ p::selection {
     column-gap: 4rem;
     column-rule: 1px solid #7ed56f;
     hyphens: auto; }
+  @media (max-width: 56.25em) {
+    .popup_img {
+      display: none; } }

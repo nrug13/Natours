@@ -38,6 +38,11 @@
         // width: 33.3%;
         // float: left;
         display: table-cell;
+        @include respond(tab-p) {
+            display: none;
+            
+    
+        }
     }
     &_right{
         width: 66%;
@@ -58,6 +63,10 @@
         hyphens: auto;
     }
     &_img{
-
+        @include respond(tab-p) {
+            display: none;
+            
+    
+        }
     }
 }
