@@ -19,7 +19,7 @@
         position: absolute;
         width: 33rem !important;
         overflow: hidden;
-        backface-visibility: visible;
+        backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 2rem rgba($color-black,.20);
         &--front{

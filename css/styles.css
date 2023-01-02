@@ -455,7 +455,7 @@ p::selection {
     position: absolute;
     width: 33rem !important;
     overflow: hidden;
-    backface-visibility: visible;
+    backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
     .card_side--front {
